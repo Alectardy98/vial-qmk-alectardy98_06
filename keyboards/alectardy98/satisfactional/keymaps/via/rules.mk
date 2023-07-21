@@ -1,0 +1,6 @@
+VIA_ENABLE = yes
+OLED_ENABLE = yes
+OLED_DRIVER = SSD1306
+ENCODER_MAP_ENABLE = yes
+SRC += oled/bongocat.c
+

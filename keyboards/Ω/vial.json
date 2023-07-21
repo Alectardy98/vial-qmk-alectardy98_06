@@ -1,0 +1,437 @@
+{
+  "name": "Zenith ZKB2",
+  "vendorId": "0x7281",
+  "productId": "0x0060",
+  "customKeycodes": [
+      {"name": "TEST",
+       "title": "TEST",
+       "shortName": "TEST"
+      },
+      {"name": "VDRT",
+       "title": "Virtual Desktop Right",
+       "shortName": "VDRT"
+      },
+      {"name": "VDLT",
+       "title": "Virtual Desktop Left",
+       "shortname": "VDLT"
+      },
+      {"name": "VDUP",
+       "title": "Virtual Desktop Up",
+       "shortName": "VDUP"
+      },
+      {"name": "VDDN",
+       "title": "Virtual Desktop Down",
+       "shortName": "VDDN"
+      },
+      {"name": "EXPL",
+       "title": "File Explorer",
+       "shortName": "EXPL"
+      },
+      {"name": "SNIP",
+       "title": "Screenshot Snip Tool",
+       "shortName": "SNIP"
+      },
+      {"name": "COPY",
+       "title": "Copy All",
+       "shortName": "COPY"
+      },
+      {"name": "CUTT",
+       "title": "Cut All",
+       "shortName": "CUTT"
+      },
+      {"name": "PAST",
+       "title": "Paste Over",
+       "shortName": "PAST"
+      },
+      {"name": "TASK",
+       "title": "Task Manager",
+       "shortName": "TASK"
+      },
+      {"name": "GOGL",
+       "title": "Opens Google Chrome",
+       "shortName": "GOGL"
+      },
+      {"name": "CMD",
+       "title": "Opens Comand Prompt",
+       "shortName": "CMD"
+      },
+      {"name": "QUIT",
+       "title": "Close App",
+       "shortName": "QUIT"
+      },
+      {"name": "00",
+       "title": "Double Zero",
+       "shortName": "DZRO"
+      },
+      {"name": "ATAB",
+       "title": "Alt + Tab",
+       "shortName": "ATAB"
+      },
+      {"name": "(",
+       "title": "Left Parenthesis",
+       "shortName": "LPRC"
+      },
+      {"name": ")",
+       "title": "Right Parenthesis",
+       "shortName": "RPRC"
+      },
+      {"name": "NUM",
+       "title": "Custom Numlock",
+       "shortName": "NUM"
+      },
+      {"name": "CTLA",
+       "title": "CTRL + A",
+       "shortName": "CTLA"
+      },
+      {"name": "CTLS",
+       "title": "CTRL + S",
+       "shortName": "CTLS"
+      },
+      {"name": "CTLD",
+       "title": "CTRL + D",
+       "shortName": "CTLD"
+      },
+      {"name": "CTLF",
+       "title": "CTRL + F",
+       "shortName": "CTLF"
+      },
+      {"name": "CTLZ",
+       "title": "CTRL + Z",
+       "shortName": "CTLZ"
+      },
+      {"name": "CTLX",
+       "title": "CTRL + X",
+       "shortName": "CTLX"
+      },
+      {"name": "CTLC",
+       "title": "CTRL + C",
+       "shortName": "CTLC"
+      },
+      {"name": "CTLV",
+       "title": "CTRL + V",
+       "shortName": "CTLV"
+      },
+      {"name": "THIS",
+       "title": ":this: emoji on discord",
+       "shortName": "THIS"
+      },
+      {"name": "OOF",
+       "title": ":oof: emoji on discord",
+       "shortName": "OOF"
+      },
+      {"name": "PIKA",
+       "title": ":surprised: emoji on discord",
+       "shortName": "PIKA"
+      },
+      {"name": "SCAT",
+       "title": ":smiley_cat2: emoji on discord",
+       "shortName": "SCAT"
+      },
+      {"name": "FCAT",
+       "title": ":smiley_cat1: emoji on discord",
+       "shortName": "FCAT"
+      },
+      {"name": "HART",
+       "title": ":heart: emoji on discord",
+       "shortName": "HART"
+      },
+      {"name": "DROL",
+       "title": "drooling_face: emoji on discord",
+       "shortName": "DROL"
+      },
+      {"name": "MONY",
+       "title": "smiley_take: emoji on discord",
+       "shortName": "MONY"
+      },
+      {"name": "FHAT",
+       "title": ":smiley_fedora: emoji on discord",
+       "shortName": "FHAT"
+      },
+      {"name": "SPIT",
+       "title": ":smiley_spit: emoji on discord",
+       "shortName": "SPIT"
+      },
+      {"name": "KING",
+       "title": ":pepe_king: emoji on discord",
+       "shortName": "KING"
+      },
+      {"name": "FLEX",
+       "title": ":muscle: emoji on discord",
+       "shortName": "FLEX"
+      },
+      {"name": "HAHA",
+       "title": ":smiley_kekw: emoji on discord",
+       "shortName": "HAHA"
+      },
+      {"name": "LCRY",
+       "title": ":joy: emoji on discord",
+       "shortName": "LCRY"
+      },
+      {"name": "NICE",
+       "title": ":nice~2: emoji on discord",
+       "shortName": "NICE"
+      },
+      {"name": "PPOG",
+       "title": ":pepe_pog: emoji on discord",
+       "shortName": "PPOG"
+      },
+      {"name": "PRAY",
+       "title": ":pray_tone2: emoji on discord",
+       "shortName": "PRAY"
+      },
+      {"name": "SWET",
+       "title": ":sweat_smile: emoji on discord",
+       "shortName": "SWET"
+      },
+      {"name": "COLD",
+       "title": ":cold_face: emoji on discord",
+       "shortName": "COLD"
+      },
+      {"name": "THUM",
+       "title": ":thumbsup: emoji on discord",
+       "shortName": "THUM"
+      }
+  ],
+  "lighting": "none",
+  "matrix": { "rows": 16, "cols": 8 },
+  "layouts": {
+    "labels": [
+    ],
+"keymap": [
+    [
+      {
+        "c": "#777777"
+      },
+      "0,0",
+      {
+        "c": "#cccccc"
+      },
+      "1,7",
+      "0,1",
+      "0,2",
+      "0,3",
+      "0,4",
+      "0,5",
+      "0,6",
+      "0,7",
+      "1,0",
+      "1,1",
+      "1,2",
+      "1,3",
+      "1,4",
+      {
+        "c": "#777777"
+      },
+      "1,5",
+      {
+        "c": "#aaaaaa"
+      },
+      "1,6",
+      {
+        "x": 0.5,
+        "c": "#777777"
+      },
+      "8,4",
+      "8,5",
+      "8,6",
+      {
+        "x": 0.5
+      },
+      "8,3",
+      "8,1",
+      "8,2",
+      "9,2"
+    ],
+    [
+      {
+        "w": 1.5
+      },
+      "2,0",
+      {
+        "c": "#cccccc"
+      },
+      "2,1",
+      "2,2",
+      "2,3",
+      "2,4",
+      "2,5",
+      "2,6",
+      "2,7",
+      "3,0",
+      "3,1",
+      "3,2",
+      "3,3",
+      "3,4",
+      {
+        "c": "#777777",
+        "w": 1.5
+      },
+      "3,5",
+      "3,6",
+      {
+        "x": 0.5
+      },
+      "10,4",
+      "10,5",
+      "10,6",
+      {
+        "x": 0.5,
+        "c": "#cccccc"
+      },
+      "10,0",
+      "10,1",
+      "10,2",
+      {
+        "c": "#777777"
+      },
+      "11,2"
+    ],
+    [
+      {
+        "c": "#aaaaaa",
+        "w": 1.75
+      },
+      "4,0",
+      {
+        "c": "#cccccc"
+      },
+      "4,1",
+      "4,2",
+      "4,3",
+      "4,4",
+      "4,5",
+      "4,6",
+      "4,7",
+      "5,0",
+      "5,1",
+      "5,2",
+      "5,3",
+      "5,4",
+      {
+        "c": "#aaaaaa",
+        "w": 1.25
+      },
+      "5,5",
+      {
+        "c": "#777777"
+      },
+      "5,6",
+      {
+        "x": 0.5
+      },
+      "12,4",
+      "12,5",
+      "12,6",
+      {
+        "x": 0.5,
+        "c": "#cccccc"
+      },
+      "12,0",
+      "12,1",
+      "12,2",
+      {
+        "c": "#777777"
+      },
+      "13,3"
+    ],
+    [
+      {
+        "c": "#aaaaaa",
+        "w": 2.25
+      },
+      "6,0",
+      {
+        "c": "#cccccc"
+      },
+      "6,3",
+      "6,3",
+      "6,4",
+      "6,5",
+      "6,6",
+      "6,7",
+      "7,0",
+      "7,1",
+      "7,2",
+      "7,3",
+      "7,4",
+      {
+        "c": "#aaaaaa",
+        "w": 1.75
+      },
+      "7,5",
+      {
+        "c": "#777777"
+      },
+      "7,6",
+      {
+        "x": 0.5
+      },
+      "14,4",
+      "14,5",
+      "14,6",
+      {
+        "x": 0.5,
+        "c": "#cccccc"
+      },
+      "14,0",
+      "14,1",
+      "14,2",
+      {
+        "c": "#777777"
+      },
+      "15,3"
+    ],
+    [
+      {
+        "c": "#aaaaaa",
+        "w": 1.5
+      },
+      "6,1",
+      {
+        "c": "#777777"
+      },
+      "8,7",
+      {
+        "c": "#aaaaaa",
+        "w": 1.5
+      },
+      "7,7",
+      {
+        "c": "#cccccc",
+        "w": 7
+      },
+      "8,0",
+      {
+        "c": "#777777",
+        "w": 1.5
+      },
+      "9,7",
+      "9,0",
+      {
+        "c": "#aaaaaa",
+        "w": 2.5
+      },
+      "5,7",
+      {
+        "x": 0.5,
+        "c": "#777777"
+      },
+      "14,7",
+      "12,7",
+      "10,7",
+      {
+        "x": 0.5,
+        "c": "#cccccc"
+      },
+      "14,3",
+      "12,3",
+      "10,3",
+      {
+        "c": "#777777"
+      },
+      "9,6"
+    ]
+  ]
+
+  }
+}

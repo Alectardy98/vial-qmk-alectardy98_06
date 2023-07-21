@@ -1,0 +1,360 @@
+{
+    "lighting": "none",
+    "name": "aek",
+    "vendorId": "0x1209",
+    "productId": "0x9209",
+    "customKeycodes": [
+        {"name": "TEST",
+         "title": "TEST",
+         "shortName": "TEST"
+        },
+        {"name": "VDRT",
+         "title": "Virtual Desktop Right",
+         "shortName": "VDRT"
+        },
+        {"name": "VDLT",
+         "title": "Virtual Desktop Left",
+         "shortname": "VDLT"
+        },
+        {"name": "VDUP",
+         "title": "Virtual Desktop Up",
+         "shortName": "VDUP"
+        },
+        {"name": "VDDN",
+         "title": "Virtual Desktop Down",
+         "shortName": "VDDN"
+        },
+        {"name": "EXPL",
+         "title": "File Explorer",
+         "shortName": "EXPL"
+        },
+        {"name": "SNIP",
+         "title": "Screenshot Snip Tool",
+         "shortName": "SNIP"
+        },
+        {"name": "COPY",
+         "title": "Copy All",
+         "shortName": "COPY"
+        },
+        {"name": "CUTT",
+         "title": "Cut All",
+         "shortName": "CUTT"
+        },
+        {"name": "PAST",
+         "title": "Paste Over",
+         "shortName": "PAST"
+        },
+        {"name": "TASK",
+         "title": "Task Manager",
+         "shortName": "TASK"
+        },
+        {"name": "QUIT",
+         "title": "Close App",
+         "shortName": "QUIT"
+        },
+        {"name": "THIS",
+         "title": ":this: emoji on discord",
+         "shortName": "THIS"
+        },
+        {"name": "OOF",
+         "title": ":oof: emoji on discord",
+         "shortName": "OOF"
+        },
+        {"name": "PIKA",
+         "title": ":surprised: emoji on discord",
+         "shortName": "PIKA"
+        },
+        {"name": "SCAT",
+         "title": ":smiley_cat2: emoji on discord",
+         "shortName": "SCAT"
+        },
+        {"name": "FCAT",
+         "title": ":smiley_cat1: emoji on discord",
+         "shortName": "FCAT"
+        },
+        {"name": "HART",
+         "title": ":heart: emoji on discord",
+         "shortName": "HART"
+        },
+        {"name": "DROL",
+         "title": "drooling_face: emoji on discord",
+         "shortName": "DROL"
+        },
+        {"name": "MONY",
+         "title": "smiley_take: emoji on discord",
+         "shortName": "MONY"
+        },
+        {"name": "FHAT",
+         "title": ":smiley_fedora: emoji on discord",
+         "shortName": "FHAT"
+        },
+        {"name": "SPIT",
+         "title": ":smiley_spit: emoji on discord",
+         "shortName": "SPIT"
+        },
+        {"name": "KING",
+         "title": ":pepe_king: emoji on discord",
+         "shortName": "KING"
+        },
+        {"name": "FLEX",
+         "title": ":muscle: emoji on discord",
+         "shortName": "FLEX"
+        },
+        {"name": "HAHA",
+         "title": ":smiley_kekw: emoji on discord",
+         "shortName": "HAHA"
+        },
+        {"name": "LCRY",
+         "title": ":joy: emoji on discord",
+         "shortName": "LCRY"
+        },
+        {"name": "NICE",
+         "title": ":nice~2: emoji on discord",
+         "shortName": "NICE"
+        },
+        {"name": "PPOG",
+         "title": ":pepe_pog: emoji on discord",
+         "shortName": "PPOG"
+        },
+        {"name": "PRAY",
+         "title": ":pray_tone2: emoji on discord",
+         "shortName": "PRAY"
+        },
+        {"name": "SWET",
+         "title": ":sweat_smile: emoji on discord",
+         "shortName": "SWET"
+        },
+        {"name": "COLD",
+         "title": ":cold_face: emoji on discord",
+         "shortName": "COLD"
+        },
+        {"name": "THUM",
+         "title": ":thumbsup: emoji on discord",
+         "shortName": "THUM"
+        }
+    ],
+    "matrix": {
+        "rows": 11,
+        "cols": 10
+    },
+    "layouts": {
+        "keymap":		
+		
+		
+[
+  {
+    "name": "AEK"
+  },
+  [
+    "0,0",
+    {
+      "x": 1
+    },
+    "0,1",
+    "10,1",
+    "0,2",
+    "10,2",
+    {
+      "x": 0.5
+    },
+    "0,3",
+    "10,3",
+    "0,4",
+    "10,4",
+    {
+      "x": 0.5
+    },
+    "0,5",
+    "10,5",
+    "0,6",
+    "10,6",
+    {
+      "x": 0.4499999999999993
+    },
+    "0,7",
+    "10,7",
+    "0,8",
+    {
+      "x": 3.4499999999999993
+    },
+    "10,9"
+  ],
+  [
+    {
+      "y": 1
+    },
+    "1,0",
+    "10,0",
+    "1,1",
+    "9,1",
+    "1,2",
+    "9,2",
+    "1,3",
+    "8,3",
+    "1,4",
+    "9,4",
+    "1,5",
+    "9,5",
+    "1,6",
+    {
+      "w": 2
+    },
+    "9,6",
+    {
+      "x": 0.4499999999999993
+    },
+    "8,6",
+    "1,7",
+    "9,7",
+    {
+      "x": 0.4499999999999993
+    },
+    "1,8",
+    "10,8",
+    "1,9",
+    "9,9"
+  ],
+  [
+    {
+      "w": 1.5
+    },
+    "2,0",
+    "9,0",
+    "2,1",
+    "8,1",
+    "2,2",
+    "8,2",
+    "2,3",
+    "7,3",
+    "2,4",
+    "8,4",
+    "2,5",
+    "8,5",
+    "2,6",
+    {
+      "w": 1.5
+    },
+    "3,6",
+    {
+      "x": 0.4499999999999993
+    },
+    "7,6",
+    "2,7",
+    "8,7",
+    {
+      "x": 0.4499999999999993
+    },
+    "2,8",
+    "9,8",
+    "2,9",
+    "8,9"
+  ],
+  [
+    {
+      "w": 1.75
+    },
+    "3,0",
+    "8,0",
+    "3,1",
+    "7,1",
+    "3,2",
+    "7,2",
+    "3,3",
+    "6,3",
+    "3,4",
+    "7,4",
+    "3,5",
+    "7,5",
+    {
+      "w": 2.25
+    },
+    "4,6",
+    {
+      "x": 3.8999999999999986
+    },
+    "3,8",
+    "8,8",
+    "7,8",
+    "3,9"
+  ],
+  [
+    {
+      "w": 2.25
+    },
+    "4,0",
+    "7,0",
+    "4,1",
+    "6,1",
+    "4,2",
+    "6,2",
+    "4,3",
+    "5,3",
+    "4,4",
+    "6,4",
+    "4,5",
+    {
+      "w": 2.75
+    },
+    "6,5",
+    {
+      "x": 1.4499999999999993
+    },
+    "3,7",
+    {
+      "x": 1.4499999999999993
+    },
+    "7,7",
+    "4,8",
+    "6,8",
+    {
+      "h": 2
+    },
+    "4,9"
+  ],
+  [
+    {
+      "w": 1.5
+    },
+    "5,0",
+    {
+      "w": 1.25
+    },
+    "6,0",
+    {
+      "w": 1.5
+    },
+    "5,1",
+    {
+      "w": 6.5
+    },
+    "5,2",
+    {
+      "w": 1.5
+    },
+    "5,4",
+    {
+      "w": 1.25
+    },
+    "5,5",
+    {
+      "w": 1.5
+    },
+    "5,6",
+    {
+      "x": 0.4499999999999993
+    },
+    "6,6",
+    "4,7",
+    "5,7",
+    {
+      "x": 0.4499999999999993,
+      "w": 2
+    },
+    "6,7",
+    "5,8"
+  ]
+]
+
+    
+    }
+}

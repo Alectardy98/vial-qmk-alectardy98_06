@@ -1,0 +1,171 @@
+{
+    "matrix": {"rows": 6, "cols": 15},
+    "customKeycodes": [
+        {"name": "TEST",
+         "title": "TEST",
+         "shortName": "TEST"
+        },
+        {"name": "VDRT",
+         "title": "Virtual Desktop Right",
+         "shortName": "VDRT"
+        },
+        {"name": "VDLT",
+         "title": "Virtual Desktop Left",
+         "shortname": "VDLT"
+        },
+        {"name": "VDUP",
+         "title": "Virtual Desktop Up",
+         "shortName": "VDUP"
+        },
+        {"name": "VDDN",
+         "title": "Virtual Desktop Down",
+         "shortName": "VDDN"
+        },
+        {"name": "EXPL",
+         "title": "File Explorer",
+         "shortName": "EXPL"
+        },
+        {"name": "SNIP",
+         "title": "Screenshot Snip Tool",
+         "shortName": "SNIP"
+        },
+        {"name": "COPY",
+         "title": "Copy All",
+         "shortName": "COPY"
+        },
+        {"name": "CUTT",
+         "title": "Cut All",
+         "shortName": "CUTT"
+        },
+        {"name": "PAST",
+         "title": "Paste Over",
+         "shortName": "PAST"
+        },
+        {"name": "TASK",
+         "title": "Task Manager",
+         "shortName": "TASK"
+        },
+        {"name": "GOGL",
+         "title": "Opens Google Chrome",
+         "shortName": "GOGL"
+        },
+        {"name": "CMD",
+         "title": "Opens Comand Prompt",
+         "shortName": "CMD"
+        },
+        {"name": "QUIT",
+         "title": "Close App",
+         "shortName": "QUIT"
+        },
+        {"name": "00",
+         "title": "Double Zero",
+         "shortName": "DZRO"
+        },
+        {"name": "ATAB",
+         "title": "Alt + Tab",
+         "shortName": "ATAB"
+        },
+        {"name": "(",
+         "title": "Left Parenthesis",
+         "shortName": "LPRC"
+        },
+        {"name": ")",
+         "title": "Right Parenthesis",
+         "shortName": "RPRC"
+        },
+        {"name": "NUM",
+         "title": "Custom Numlock",
+         "shortName": "NUM"
+        },
+        {"name": "THIS",
+         "title": ":this: emoji on discord",
+         "shortName": "THIS"
+        },
+        {"name": "OOF",
+         "title": ":oof: emoji on discord",
+         "shortName": "OOF"
+        },
+        {"name": "PIKA",
+         "title": ":surprised: emoji on discord",
+         "shortName": "PIKA"
+        },
+        {"name": "SCAT",
+         "title": ":smiley_cat2: emoji on discord",
+         "shortName": "SCAT"
+        },
+        {"name": "FCAT",
+         "title": ":smiley_cat1: emoji on discord",
+         "shortName": "FCAT"
+        },
+        {"name": "HART",
+         "title": ":heart: emoji on discord",
+         "shortName": "HART"
+        },
+        {"name": "DROL",
+         "title": "drooling_face: emoji on discord",
+         "shortName": "DROL"
+        },
+        {"name": "MONY",
+         "title": "smiley_take: emoji on discord",
+         "shortName": "MONY"
+        },
+        {"name": "FHAT",
+         "title": ":smiley_fedora: emoji on discord",
+         "shortName": "FHAT"
+        },
+        {"name": "SPIT",
+         "title": ":smiley_spit: emoji on discord",
+         "shortName": "SPIT"
+        },
+        {"name": "KING",
+         "title": ":pepe_king: emoji on discord",
+         "shortName": "KING"
+        },
+        {"name": "FLEX",
+         "title": ":muscle: emoji on discord",
+         "shortName": "FLEX"
+        },
+        {"name": "HAHA",
+         "title": ":smiley_kekw: emoji on discord",
+         "shortName": "HAHA"
+        },
+        {"name": "LCRY",
+         "title": ":joy: emoji on discord",
+         "shortName": "LCRY"
+        },
+        {"name": "NICE",
+         "title": ":nice~2: emoji on discord",
+         "shortName": "NICE"
+        },
+        {"name": "PPOG",
+         "title": ":pepe_pog: emoji on discord",
+         "shortName": "PPOG"
+        },
+        {"name": "PRAY",
+         "title": ":pray_tone2: emoji on discord",
+         "shortName": "PRAY"
+        },
+        {"name": "SWET",
+         "title": ":sweat_smile: emoji on discord",
+         "shortName": "SWET"
+        },
+        {"name": "COLD",
+         "title": ":cold_face: emoji on discord",
+         "shortName": "COLD"
+        },
+        {"name": "THUM",
+         "title": ":thumbsup: emoji on discord",
+         "shortName": "THUM"
+        }
+    ],
+    "layouts": {
+        "keymap":[
+            [{"c":"#777777"},"0,0",{"x":0.5,"c":"#cccccc"},"0,1","0,2","0,3","0,4",{"x":0.5},"0,6","0,7","0,8","0,9",{"x":0.5},"0,10","0,11","0,12","0,13",{"x":0.5},"0,14"],
+            [{"y":0.25},"1,0","1,1","1,2","1,3","1,4","1,5","1,6","1,7","1,8","1,9","1,10","1,11","1,12",{"w":2},"1,13","1,14"],
+            [{"w":1.5},"2,0","2,1","2,2","2,3","2,4","2,5","2,6","2,7","2,8","2,9","2,10","2,11","2,12",{"w":1.5},"2,13","2,14"],
+            [{"c":"#aaaaaa","w":1.75},"3,0",{"c":"#cccccc"},"3,1","3,2","3,3","3,4","3,5","3,6","3,7","3,8","3,9","3,10","3,11",{"c":"#777777","w":2.25},"3,13",{"c":"#cccccc"},"3,14"],
+            [{"c":"#aaaaaa","w":2.25},"4,0",{"c":"#cccccc"},"4,1","4,2","4,3","4,4","4,5","4,6","4,7","4,8","4,9","4,10",{"c":"#aaaaaa","w":1.75},"4,12",{"c":"#777777"},"4,13",{"c":"#cccccc"},"4,14"],
+            [{"c":"#aaaaaa","w":1.25},"5,0",{"w":1.25},"5,1",{"w":1.25},"5,2",{"c":"#cccccc","w":6.25},"5,5",{"c":"#aaaaaa","w":1.25},"5,9",{"w":1.25},"5,10",{"x":0.5,"c":"#777777"},"5,12","5,13","5,14"]
+        ]
+    }
+}

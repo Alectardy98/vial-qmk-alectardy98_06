@@ -1,0 +1,47 @@
+{
+  "manufacturer": "QMK",
+  "keyboard_name": "Atari CX50 Keypad Converter",
+  "maintainer": "MMcM",
+  "bootloader": "halfkay",
+  "debounce": 5,
+  "diode_direction": "COL2ROW",
+  "features": {
+    "bootmagic": false,
+    "command": true,
+    "console": true,
+    "extrakey": true,
+    "mousekey": true,
+    "sleep_led": false
+  },
+  "matrix_pins": {
+    "cols": ["F1", "F0", "D0"],
+    "rows": ["B0", "B1", "B2", "B3"]
+  },
+  "processor": "atmega32u4",
+  "url": "http://www.ataricompendium.com/game_library/controllers/controllers.html#keypads",
+  "usb": {
+    "device_ver": "0x0001",
+    "pid": "0xC050",
+    "vid": "0xFEED"
+  },
+  "layouts": {
+    "LAYOUT": {
+      "c_macro": true,
+      "filename": "keyboards/converter/atari/cx50/cx50.h",
+      "layout": [
+        { "label": "1", "matrix": [0, 0], "w": 1, "x": 0, "y": 0 },
+        { "label": "2", "matrix": [0, 1], "w": 1, "x": 1, "y": 0 },
+        { "label": "3", "matrix": [0, 2], "w": 1, "x": 2, "y": 0 },
+        { "label": "4", "matrix": [1, 0], "w": 1, "x": 0, "y": 1 },
+        { "label": "5", "matrix": [1, 1], "w": 1, "x": 1, "y": 1 },
+        { "label": "6", "matrix": [1, 2], "w": 1, "x": 2, "y": 1 },
+        { "label": "7", "matrix": [2, 0], "w": 1, "x": 0, "y": 2 },
+        { "label": "8", "matrix": [2, 1], "w": 1, "x": 1, "y": 2 },
+        { "label": "9", "matrix": [2, 2], "w": 1, "x": 2, "y": 2 },
+        { "label": "*", "matrix": [3, 0], "w": 1, "x": 0, "y": 3 },
+        { "label": "0", "matrix": [3, 1], "w": 1, "x": 1, "y": 3 },
+        { "label": "#", "matrix": [3, 2], "w": 1, "x": 2, "y": 3 }
+      ]
+    }
+  }
+}

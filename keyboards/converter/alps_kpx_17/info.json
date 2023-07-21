@@ -1,0 +1,50 @@
+{
+  "manufacturer": "QMK",
+  "keyboard_name": "Alps KPX-17 Keypad Converter",
+  "maintainer": "MMcM",
+  "features": {
+    "api_sysex": false,
+    "audio": false,
+    "backlight": false,
+    "bluetooth": false,
+    "bootmagic": false,
+    "command": true,
+    "console": true,
+    "extrakey": true,
+    "midi": false,
+    "mousekey": false,
+    "nkro": true,
+    "rgblight": false,
+    "sleep_led": false,
+    "unicode": false
+  },
+  "url": "https://deskthority.net/viewtopic.php?f=7&t=24619",
+  "usb": {
+    "device_ver": "0x0001",
+    "pid": "0x1700",
+    "vid": "0xFEED"
+  },
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        { "label":"Num Lock", "x":0, "y":0 },
+        { "label":"/", "x":1, "y":0 },
+        { "label":"*", "x":2, "y":0 },
+        { "label":"-", "x":2, "y":0 },
+        { "label":"7", "x":0, "y":1 },
+        { "label":"8", "x":1, "y":1 },
+        { "label":"9", "x":2, "y":1 },
+        { "label":"+", "x":2, "y":1, "h":2 },
+        { "label":"4", "x":0, "y":2 },
+        { "label":"5", "x":1, "y":2 },
+        { "label":"6", "x":2, "y":2 },
+        { "label":"1", "x":0, "y":3 },
+        { "label":"2", "x":1, "y":3 },
+        { "label":"3", "x":2, "y":3 },
+        { "label":"Enter", "x":2, "y":3, "h":2 },
+        { "label":"0", "x":0, "y":4, "w":2 },
+        { "label":".", "x":2, "y":4 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "manufacturer": "QMK",
+  "keyboard_name": "Compaq Numeric Keypad Converter",
+  "maintainer": "MMcM",
+  "bootloader": "caterina",
+  "features": {
+    "api_sysex": false,
+    "audio": false,
+    "backlight": false,
+    "bluetooth": false,
+    "bootmagic": false,
+    "command": true,
+    "console": true,
+    "extrakey": false,
+    "midi": false,
+    "mousekey": false,
+    "nkro": false,
+    "rgblight": false,
+    "sleep_led": false,
+    "unicode": false
+  },
+  "processor": "atmega32u4",
+  "url": "https://deskthority.net/viewtopic.php?f=7&t=24556",
+  "usb": {
+    "device_ver": "0x0001",
+    "pid": "0x2697",
+    "vid": "0xFEED"
+  },
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        {"label":"Home", "x":0.25, "y":0.25, "w":0.75, "h":0.75},
+        {"label":"Up", "x":1, "y":0.25, "w":0.75, "h":0.75},
+        {"label":"End", "x":1.75, "y":0.25, "w":0.75, "h":0.75},
+        {"label":"Page Up", "x":2.5, "y":0.25, "w":0.75, "h":0.75},
+        {"label":"Left", "x":0.25, "y":1, "w":0.75, "h":0.75},
+        {"label":"Down", "x":1, "y":1, "w":0.75, "h":0.75},
+        {"label":"Right", "x":1.75, "y":1, "w":0.75, "h":0.75},
+        {"label":"Page Down", "x":2.5, "y":1, "w":0.75, "h":0.75},
+        {"label":"/", "x":1, "y":2},
+        {"label":"*", "x":2, "y":2},
+        {"label":"-", "x":2, "y":2, "w":2},
+        {"label":"7", "x":0, "y":3},
+        {"label":"8", "x":1, "y":3},
+        {"label":"9", "x":2, "y":3},
+        {"label":"+", "x":2, "y":3, "h":2},
+        {"label":"4", "x":0, "y":4},
+        {"label":"5", "x":1, "y":4},
+        {"label":"6", "x":2, "y":4},
+        {"label":"1", "x":0, "y":5},
+        {"label":"2", "x":1, "y":5},
+        {"label":"3", "x":2, "y":5},
+        {"label":"Enter", "x":2, "y":5, "h":2},
+        {"label":"0", "x":0, "y":6, "w":2},
+        {"label":".", "x":2, "y":6},
+      ]
+    }
+  }
+}
