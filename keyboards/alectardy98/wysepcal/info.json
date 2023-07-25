@@ -1,11 +1,11 @@
 {
-    "keyboard_name": "Sharpx1al",
+    "keyboard_name": "WysePCal",
     "manufacturer": "Alectardy98",
     "url": "https://keebal.com",
     "maintainer": "Alectardy98",
     "usb": {
         "vid": "0x7281",
-        "pid": "0x0080",
+        "pid": "0x0018",
         "device_version": "0.0.1"
     },
     "url": "https://github.com/alectardy98",

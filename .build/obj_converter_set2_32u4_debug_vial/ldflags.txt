@@ -1,0 +1,1 @@
+-Wl,--gc-sections -Wl,-Map=.build/converter_set2_32u4_debug_vial.map,--cref   -lm 

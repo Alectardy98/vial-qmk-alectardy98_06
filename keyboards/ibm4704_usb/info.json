@@ -1,0 +1,21 @@
+{
+  "keyboard_name": "Pingmaster",
+  "manufacturer": "IBM",
+  "url": "https://keebal.com",
+  "maintainer": "Alectardy98",
+  "processor": "atmega32u4",
+  "bootloader": "atmel-dfu",
+  "debounce": 5,
+  "diode_direction": "COL2ROW",
+  "usb": {
+      "vid": "0x7281",
+    "pid": "0x0001",
+    "device_version": "1.0.4"
+  },
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "IBM Model F 4704 F50",
+    "manufacturer": "IBM/Tom Wong-Cornall/Purdea Andrei",
+    "maintainer": "Purdea Andrei",
+    "url": "",
+    "processor": "atmega32u2",
+    "bootloader": "atmel-dfu",
+    "usb": {
+        "vid": "0x16C0",
+        "pid": "0x27DB",
+        "device_version": "0.0.1"
+    }
+}

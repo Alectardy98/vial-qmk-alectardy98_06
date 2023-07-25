@@ -8,12 +8,12 @@
     "features": {
         "audio": false,
         "bootmagic": true,
-        "command": false,
+        "command": true,
         "console": false,
         "extrakey": true,
         "mousekey": false,
-        "nkro": false,
-        "unicode": false
+        "nkro": true,
+        "unicode": true
     },
     "split": {
         "enabled": true

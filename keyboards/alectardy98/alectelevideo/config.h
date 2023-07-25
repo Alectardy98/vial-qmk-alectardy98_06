@@ -2,10 +2,10 @@
 
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x6776
-#define PRODUCT_ID      0x7476
+#define VENDOR_ID       0x7281
+#define PRODUCT_ID      0x0043
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    Alec
+#define MANUFACTURER    QMK
 #define PRODUCT         Televideo 725
 
 /* key matrix size */

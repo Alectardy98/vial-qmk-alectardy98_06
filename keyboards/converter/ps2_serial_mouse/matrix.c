@@ -2,13 +2,13 @@
 #include "debug.h"
 #include "matrix.h"
 #include "print.h"
-#include "ps2.h"
+#include "ps2bt.h"
 #include "timer.h"
 
 // Very sparse. Wasting this much space (12 rows for one key) makes prefix mapping much easier.
 static matrix_row_t matrix[MATRIX_ROWS];
-#define ROW(code) (code>>5)
-#define COL(code) (code&0x1F)
+#define ROW(code) (code >> 3)
+#define COL(code) (code & 0x07)
 
 inline
 static void matrix_make(uint16_t code) {

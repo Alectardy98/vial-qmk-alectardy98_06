@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "F104 round 1 non-shrunk, by Model F Labs",
+    "manufacturer": "Model F Labs/Tom Wong-Cornall/wcass/Purdea Andrei",
+    "maintainer": "Purdea Andrei",
+    "url": "https://www.modelfkeyboards.com/",
+    "processor": "atmega32u2",
+    "bootloader": "atmel-dfu",
+    "usb": {
+        "vid": "0x1209",
+        "pid": "0x4704",
+        "device_version": "0.0.1"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "FSSK v1.0b",
+    "manufacturer": "IBM/i$/Tom Wong-Cornall/Purdea Andrei",
+    "maintainer": "Purdea Andrei",
+    "url": "https://deskthority.net/viewtopic.php?t=10744",
+    "processor": "atmega32u2",
+    "bootloader": "atmel-dfu",
+    "usb": {
+        "vid": "0x16C0",
+        "pid": "0x27DB",
+        "device_version": "0.0.1"
+    }
+}

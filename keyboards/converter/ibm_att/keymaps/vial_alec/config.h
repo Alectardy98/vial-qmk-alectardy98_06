@@ -1,0 +1,11 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+
+#pragma once
+
+#define VIAL_KEYBOARD_UID {0xC7, 0x3D, 0x06, 0xF7, 0xE1, 0xB6, 0xA1, 0xF4}
+#define VIA_EEPROM_LAYOUT_OPTIONS_SIZE 4
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 3
+#define VIAL_TAP_DANCE_ENTRIES 0
+#define VIAL_COMBO_ENTRIES 4
+#define VIAL_KEY_OVERRIDE_ENTRIES 4

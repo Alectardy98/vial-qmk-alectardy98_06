@@ -3,15 +3,14 @@
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
 #define VENDOR_ID       0x7281
-#define PRODUCT_ID      0x414E
+#define PRODUCT_ID      0x1000
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    QMK
-#define PRODUCT         SET2
-                          
-#define MATRIX_ROWS       24
-#define MATRIX_COLS       32
+#define PRODUCT         Set2 Keyboard
+
+#define MATRIX_ROWS       16
+#define MATRIX_COLS       8
 
 /*
  * PS/2 USART configuration for ATMega32U4
@@ -28,6 +27,8 @@
 /* uses INT1 for clock line(ATMega32U4) */
 #define PS2_CLOCK_PIN   D1
 #define PS2_DATA_PIN    D0
+
+
 
 #define PS2_INT_INIT()  do {    \
     EICRA |= ((1<<ISC11) |      \

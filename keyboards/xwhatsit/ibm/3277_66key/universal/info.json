@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "IBM Beamspring 3277 (66-key)",
+    "manufacturer": "IBM/Tom Wong-Cornall/listofoptions/kmnov2017/Purdea Andrei",
+    "maintainer": "Purdea Andrei",
+    "url": "",
+    "processor": "atmega32u4",
+    "bootloader": "caterina",
+    "usb": {
+        "vid": "0x16C0",
+        "pid": "0x27DB",
+        "device_version": "0.0.1"
+    }
+}

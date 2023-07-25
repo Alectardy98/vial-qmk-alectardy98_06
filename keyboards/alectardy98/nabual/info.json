@@ -5,7 +5,7 @@
     "maintainer": "Alectardy98",
     "usb": {
         "vid": "0x7281",
-        "pid": "0x0030",
+        "pid": "0x0003",
         "device_version": "0.0.1"
     },
     "url": "https://github.com/alectardy98",
