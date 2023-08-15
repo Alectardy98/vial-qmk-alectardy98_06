@@ -25,9 +25,9 @@
 
 #pragma once
 
-#define QMK_VERSION "2dfd31-dirty"
-#define QMK_BUILDDATE "2023-07-25-18:09:17"
-#define CHIBIOS_VERSION "2dfd31-dirty"
-#define CHIBIOS_CONTRIB_VERSION "2dfd31-dirty"
+#define QMK_VERSION "ed426a-dirty"
+#define QMK_BUILDDATE "2023-08-13-00:28:34"
+#define CHIBIOS_VERSION "ed426a-dirty"
+#define CHIBIOS_CONTRIB_VERSION "ed426a-dirty"
 
-#define BUILD_ID ((uint32_t)0x005C702D)
+#define BUILD_ID ((uint32_t)0x00EA9EDC)

@@ -179,6 +179,8 @@ void dynamic_keymap_set_encoder(uint8_t layer, uint8_t encoder_id, bool clockwis
 }
 #endif // ENCODER_MAP_ENABLE
 
+
+
 #ifdef QMK_SETTINGS
 uint8_t dynamic_keymap_get_qmk_settings(uint16_t offset) {
     if (offset >= VIAL_QMK_SETTINGS_SIZE)
@@ -263,6 +265,8 @@ int dynamic_keymap_set_key_override(uint8_t index, const vial_key_override_entry
 }
 #endif
 
+
+
 void dynamic_keymap_reset(void) {
 #ifdef VIAL_ENABLE
     /* temporarily unlock the keyboard so we can set hardcoded QK_BOOT keycode */
@@ -275,7 +279,7 @@ void dynamic_keymap_reset(void) {
         for (int row = 0; row < MATRIX_ROWS; row++) {
             for (int column = 0; column < MATRIX_COLS; column++) {
                 if (layer < keymap_layer_count()) {
-                    dynamic_keymap_set_keycode(layer, row, column, pgm_read_word(&keymaps[layer][row][column]));
+                    dynamic_keymap_set_keycode(layer, row, column, keycode_at_keymap_location_raw(layer, row, column));
                 } else {
                     dynamic_keymap_set_keycode(layer, row, column, KC_TRANSPARENT);
                 }
