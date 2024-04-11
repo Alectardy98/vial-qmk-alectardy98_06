@@ -1,0 +1,1 @@
+-Wl,--gc-sections -Wl,-Map=.build/alectardy98_keymacsal_vial_alec.map,--cref   -lm 

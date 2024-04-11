@@ -1,1 +1,0 @@
--Wl,--gc-sections -Wl,-Map=.build/xwhatsit_ibm_fat_universal_debug.map,--cref   -lm 
