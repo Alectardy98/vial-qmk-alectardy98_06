@@ -23,8 +23,8 @@ enum layer_names {
     _FN
 };
 
-enum custom_keycodes {      //In Mac OS Swap Command and Control for proper macro use
-    TEST = SAFE_RANGE,
+enum blender_keycode {
+    TEST = USER00,
     VDRT,                   //Desktop Right "set to move right a space on mac"
     VDLT,                   //Desktop Left "set to move left a space on mac"
     VDUP,                   //V-Desktop Up "set to mission controll on mac"
@@ -42,32 +42,38 @@ enum custom_keycodes {      //In Mac OS Swap Command and Control for proper macr
     ATAB,                   //Alt + Tab "brew install alt-tab on mac"
     LPRC,                   //The "(" Key
     RPRC,                   //The ")" Key
-    //Control Section
-    CTLA,                   //CTRL + A
-    CTLS,                   //CTRL + S
-    CTLD,                   //CTRL + D
-    CTLF,                   //CTRL + F
-    CTLZ,                   //CTRL + Z
-    CTLX,                   //CTRL + X
-    CTLC,                   //CTRL + C
-    CTLV,                   //CTRL + V
+    NUM,                    //Num Lock for both mac and windows
     //Discord Section
     THIS,                   //Macro for ":this:" emoji on discord
     OOF,                    //Macro for ":oof:" emoji on discord
     PIKA,                   //Macro for ":surprised:" emoji on discord
-    SCAT,                   //Macro for ":smiley_cat_spanish:" emoji on discord
-    FCAT,                   //Macro for ":smiley_cat_fancy:" emoji on discord
+    SCAT,                   //Macro for ":smiley_cat2:" emoji on discord
+    FCAT,                   //Macro for ":smiley_cat1:" emoji on discord
     HART,                   //Macro for ":heart:" emoji on discord
     DROL,                   //Macro for ":drooling_face:" emoji on discord
-    MONY,                   //Macro for ":smiley_takemoney:" emoji on discord
-    FHAT,                   //Macro for "::smiley_tip_fedora:" emoji on discord
-    SPIT,                   //Macro for ":smiley_spit_surprised:" emoji on discord
-    KING,                   //Macro for ":pepe_king_royal:" emoji on discord
-
+    MONY,                   //Macro for ":smiley_take:" emoji on discord
+    FHAT,                   //Macro for ":smiley_fedora:" emoji on discord
+    SPIT,                   //Macro for ":smiley_spit:" emoji on discord
+    KING,                   //Macro for ":pepe_king:" emoji on discord
+    FLEX,                   //Macro for ":muscle:" emoji on discord
+    HAHA,                   //Macro for ":smiley_kekw:" emoji on discord
+    LCRY,                   //Macro for ":joy:" emoji on discord
+    NICE,                   //Macro for ":nice~2:" emoji on discord
+    PPOG,                   //Macro for ":pepe_pog:" emoji on discord
+    PRAY,                   //Macro for ":pray_tone2:" emoji on discord
+    SWET,                   //Macro for ":sweat_smile:" emoji on discord
+    COLD,                   //Macro for ":cold_face:" emoji on discord
+    THUM,                   //Macro for ":thumbsup:" emoji on discord
 };
     
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (record->event.pressed) {             //Code for macros
+    bool num_lock = host_keyboard_led_state().num_lock;       //Puts the keyboard into Num Lock state if host OS initializes in Num Lock state
+        if (num_lock) {
+            if(IS_LAYER_OFF(_NUM)) {
+                layer_on(_NUM);
+            }
+        }
+     if (record->event.pressed) {             //Code for macros
         switch(keycode) {
             case TEST:
             if (record->event.pressed) {
@@ -143,39 +149,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             if (record->event.pressed) {
                 SEND_STRING(")");
                 }break;
-                //Control Section
-            case CTLA:
+            case NUM:
             if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("a"));
-                }break;
-            case CTLS:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("s"));
-                }break;
-            case CTLD:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("d"));
-                }break;
-            case CTLF:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("f"));
-                }break;
-            case CTLZ:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("z"));
-                }break;
-            case CTLX:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("x"));
-                }break;
-            case CTLC:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("c"));
-                }break;
-            case CTLV:
-            if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL("v"));
-                }break;
+                SEND_STRING( SS_TAP(X_NLCK) );                  //Toggles layer change and presses the num lock button, to allow for Num lock toggle to occure for both Mac OS and Windows
+                layer_invert(_NUM);
+            return true;
+            }break;
                 //Discord Section
             case THIS:
             if (record->event.pressed) {
@@ -191,11 +170,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     }break;
             case SCAT:
             if (record->event.pressed) {
-                    SEND_STRING(":smiley_cat_spanish:" SS_TAP(X_ENTER));
+                    SEND_STRING(":smiley_cat2:" SS_TAP(X_ENTER));
                     }break;
             case FCAT:
             if (record->event.pressed) {
-                    SEND_STRING(":smiley_cat_fancy:" SS_TAP(X_ENTER));
+                    SEND_STRING(":smiley_cat1:" SS_TAP(X_ENTER));
                     }break;
             case HART:
             if (record->event.pressed) {
@@ -207,19 +186,55 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     }break;
             case MONY:
             if (record->event.pressed) {
-                    SEND_STRING(":smiley_takemoney:" SS_TAP(X_ENTER));
+                    SEND_STRING(":smiley_take:" SS_TAP(X_ENTER));
                     }break;
             case FHAT:
             if (record->event.pressed) {
-                    SEND_STRING(":smiley_tip_fedora:" SS_TAP(X_ENTER));
+                    SEND_STRING(":smiley_fedora:" SS_TAP(X_ENTER));
                     }break;
             case SPIT:
             if (record->event.pressed) {
-                    SEND_STRING(":smiley_spit_surprised:" SS_TAP(X_ENTER));
+                    SEND_STRING(":smiley_spit:" SS_TAP(X_ENTER));
                     }break;
             case KING:
             if (record->event.pressed) {
-                    SEND_STRING(":pepe_king_royal:" SS_TAP(X_ENTER));
+                    SEND_STRING(":pepe_king:" SS_TAP(X_ENTER));
+                    }break;
+            case FLEX:
+            if (record->event.pressed) {
+                    SEND_STRING(":muscle:" SS_TAP(X_ENTER));
+                    }break;
+            case HAHA:
+            if (record->event.pressed) {
+                    SEND_STRING(":smiley_kekw:" SS_TAP(X_ENTER));
+                    }break;
+            case LCRY:
+            if (record->event.pressed) {
+                    SEND_STRING(":joy:" SS_TAP(X_ENTER));
+                    }break;
+            case NICE:
+            if (record->event.pressed) {
+                    SEND_STRING(":nice~2:" SS_TAP(X_ENTER));
+                    }break;
+            case PPOG:
+            if (record->event.pressed) {
+                    SEND_STRING(":pepe_pog:" SS_TAP(X_ENTER));
+                    }break;
+            case PRAY:
+            if (record->event.pressed) {
+                    SEND_STRING(":pray_tone2:" SS_TAP(X_ENTER));
+                    }break;
+            case SWET:
+            if (record->event.pressed) {
+                    SEND_STRING(":sweat_smile:" SS_TAP(X_ENTER));
+                    }break;
+            case COLD:
+            if (record->event.pressed) {
+                    SEND_STRING(":cold_face:" SS_TAP(X_ENTER));
+                    }break;
+            case THUM:
+            if (record->event.pressed) {
+                    SEND_STRING(":thumbsup:" SS_TAP(X_ENTER));
                     }break;
         }
     }
@@ -232,11 +247,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_BASE] = LAYOUT(
-     QUIT,    TASK,  KC_ESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,  KC_EQL, _______, KC_BSPC, KC_MPLY,  \
-  DM_PLY1, DM_PLY2,  KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_LBRC, KC_RBRC, KC_BSLS,TG(_NUM),  \
-     SNIP,    EXPL, KC_LCAP,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,   KC_NO,  KC_ENT,  KC_DEL,  \
-     COPY,    PAST, KC_LSFT,   KC_NO,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,   KC_UP,MO(_FRONT),\
-     VDLT,    VDRT, KC_LCTL, MO(_FN), KC_LALT,                             KC_SPC,                   KC_RALT, KC_GRV,             KC_LEFT, KC_DOWN,KC_RGHT),
+     QUIT,    TASK,  KC_ESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,  KC_EQL, _______,  KC_BSPC, KC_MPLY,  \
+  DM_PLY1, DM_PLY2,  KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_LBRC, KC_RBRC, _______, TG(_NUM),  \
+     SNIP,    EXPL, KC_LCAP,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT, _______,  KC_ENT,   KC_DEL,  \
+     COPY,    PAST, KC_LSFT,   KC_NO,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,   KC_UP,  KC_BSLS,\
+     VDLT,    VDRT, KC_LCTL, MO(_FN), KC_LALT,                             KC_SPC,                MO(_FRONT), KC_GRV,           KC_LEFT, KC_DOWN, KC_RGHT),
     
 [_NUM] = LAYOUT(
   _______, _______, _______, _______, _______, _______, _______, _______, _______,    KC_7,    KC_8,    KC_9, _______, _______, _______, _______, _______, _______, \
@@ -250,13 +265,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_LEFT, _______, KC_RGHT, _______, _______, _______, _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______,  KC_END, KC_DOWN, KC_PGDN, _______, _______, _______, _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_INS, _______,   KC_DEL, _______, _______, _______, _______, \
-  _______, _______, _______, _______, _______,                            _______,                   _______, _______,         _______, _______, _______),
+  _______, _______, _______, _______, _______,                            _______,                   _______, _______,          _______, _______, _______),
     
 [_FN] = LAYOUT(
   _______, _______, QK_BOOT,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, _______,  KC_DEL,    QUIT, \
   DM_REC1, DM_REC2, _______,    THIS,     OOF,    PIKA,    FCAT,    HART,    DROL,    MONY,    FHAT,    SPIT,    KING, _______, _______, _______, _______, \
-  _______, _______, _______,    CTLA,    CTLS,    CTLD,    CTLF, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, _______, _______,  KC_INS, \
-  _______, _______, _______, _______,    CTLZ,    CTLX,    CTLC,    CTLV, _______, _______, _______, KC_MPRV, KC_MNXT, KC_MPLY, _______,    VDUP, _______, \
+  _______, _______, _______, C(KC_A), C(KC_S), C(KC_D), C(KC_F), _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, _______, _______,  KC_INS, \
+  _______, _______, _______, _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), _______, _______, _______, KC_MPRV, KC_MNXT, KC_MPLY, _______,    VDUP, _______, \
   _______, _______, KC_LGUI, _______, _______,                            _______,                   _______, _______,             VDLT,    VDDN,   VDRT),
     
 };
@@ -265,9 +280,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
           // Mappings for 1st Encoder
-    [_BASE] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD)  }, // Mapping for Base layer
-    [_NUM] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD)  }, // Mapping for Layer 1
-    [_FRONT] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD)  }, // Mapping for Layer 2
+    [_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  }, // Mapping for Base layer
+    [_NUM] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  }, // Mapping for Layer 1
+    [_FRONT] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  }, // Mapping for Layer 2
     [_FN] = { ENCODER_CCW_CW(KC_PGUP, KC_PGDN) }, // Mapping for Layer 3
 
 
