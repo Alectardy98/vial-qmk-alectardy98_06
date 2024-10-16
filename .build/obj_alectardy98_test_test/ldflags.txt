@@ -1,1 +1,0 @@
--Wl,--gc-sections -Wl,-Map=.build/alectardy98_test_test.map,--cref   -lm 
