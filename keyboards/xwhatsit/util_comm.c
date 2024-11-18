@@ -33,7 +33,7 @@
 
 static const uint8_t magic[] = UTIL_COMM_MAGIC;
 
-void raw_hid_receive(uint8_t *data, uint8_t length) {
+void raw_hid_receive_util_comm(uint8_t *data, uint8_t length) {  // Changed the name here
     if (0 != memcmp(data, magic, sizeof(magic))) {
         return;
     }
@@ -227,3 +227,4 @@ void raw_hid_receive(uint8_t *data, uint8_t length) {
     }
     raw_hid_send(response, sizeof(response));
 }
+
