@@ -1,0 +1,14 @@
+
+OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+
+AUDIO_ENABLE = yes
+AUDIO_DRIVER = pwm_software
+
+HAPTIC_ENABLE = yes
+HAPTIC_DRIVER = SOLENOID   #启用电磁阀
+
+VIAL_INSECURE = yes    #禁用启动VIAL恶意刷新固件的按键
+
+#QMK_SETTINGS = no
+LTO_ENABLE = yes
+#ALLOW_WARNINGS = yes
