@@ -1,0 +1,482 @@
+{
+  "name": "AlpineNoon",
+  "vendorId": "0x6776",
+  "productId": "0x414E",
+  "customKeycodes": [
+      {"name": "TEST",
+       "title": "TEST",
+       "shortName": "TEST"
+      },
+      {"name": "VDRT",
+       "title": "Virtual Desktop Right",
+       "shortName": "VDRT"
+      },
+      {"name": "VDLT",
+       "title": "Virtual Desktop Left",
+       "shortname": "VDLT"
+      },
+      {"name": "VDUP",
+       "title": "Virtual Desktop Up",
+       "shortName": "VDUP"
+      },
+      {"name": "VDDN",
+       "title": "Virtual Desktop Down",
+       "shortName": "VDDN"
+      },
+      {"name": "EXPL",
+       "title": "File Explorer",
+       "shortName": "EXPL"
+      },
+      {"name": "SNIP",
+       "title": "Screenshot Snip Tool",
+       "shortName": "SNIP"
+      },
+      {"name": "COPY",
+       "title": "Copy All",
+       "shortName": "COPY"
+      },
+      {"name": "CUTT",
+       "title": "Cut All",
+       "shortName": "CUTT"
+      },
+      {"name": "PAST",
+       "title": "Paste Over",
+       "shortName": "PAST"
+      },
+      {"name": "TASK",
+       "title": "Task Manager",
+       "shortName": "TASK"
+      },
+      {"name": "GOGL",
+       "title": "Opens Google Chrome",
+       "shortName": "GOGL"
+      },
+      {"name": "CMD",
+       "title": "Opens Comand Prompt",
+       "shortName": "CMD"
+      },
+      {"name": "QUIT",
+       "title": "Close App",
+       "shortName": "QUIT"
+      },
+      {"name": "00",
+       "title": "Double Zero",
+       "shortName": "DZRO"
+      },
+      {"name": "ATAB",
+       "title": "Alt + Tab",
+       "shortName": "ATAB"
+      },
+      {"name": "(",
+       "title": "Left Parenthesis",
+       "shortName": "LPRC"
+      },
+      {"name": ")",
+       "title": "Right Parenthesis",
+       "shortName": "RPRC"
+      },
+      {"name": "NUM",
+       "title": "Custom Numlock",
+       "shortName": "NUM"
+      },
+      {"name": "THIS",
+       "title": ":this: emoji on discord",
+       "shortName": "THIS"
+      },
+      {"name": "OOF",
+       "title": ":oof: emoji on discord",
+       "shortName": "OOF"
+      },
+      {"name": "PIKA",
+       "title": ":surprised: emoji on discord",
+       "shortName": "PIKA"
+      },
+      {"name": "SCAT",
+       "title": ":smiley_cat2: emoji on discord",
+       "shortName": "SCAT"
+      },
+      {"name": "FCAT",
+       "title": ":smiley_cat1: emoji on discord",
+       "shortName": "FCAT"
+      },
+      {"name": "HART",
+       "title": ":heart: emoji on discord",
+       "shortName": "HART"
+      },
+      {"name": "DROL",
+       "title": "drooling_face: emoji on discord",
+       "shortName": "DROL"
+      },
+      {"name": "MONY",
+       "title": "smiley_take: emoji on discord",
+       "shortName": "MONY"
+      },
+      {"name": "FHAT",
+       "title": ":smiley_fedora: emoji on discord",
+       "shortName": "FHAT"
+      },
+      {"name": "SPIT",
+       "title": ":smiley_spit: emoji on discord",
+       "shortName": "SPIT"
+      },
+      {"name": "KING",
+       "title": ":pepe_king: emoji on discord",
+       "shortName": "KING"
+      },
+      {"name": "FLEX",
+       "title": ":muscle: emoji on discord",
+       "shortName": "FLEX"
+      },
+      {"name": "HAHA",
+       "title": ":smiley_kekw: emoji on discord",
+       "shortName": "HAHA"
+      },
+      {"name": "LCRY",
+       "title": ":joy: emoji on discord",
+       "shortName": "LCRY"
+      },
+      {"name": "NICE",
+       "title": ":nice~2: emoji on discord",
+       "shortName": "NICE"
+      },
+      {"name": "PPOG",
+       "title": ":pepe_pog: emoji on discord",
+       "shortName": "PPOG"
+      },
+      {"name": "PRAY",
+       "title": ":pray_tone2: emoji on discord",
+       "shortName": "PRAY"
+      },
+      {"name": "SWET",
+       "title": ":sweat_smile: emoji on discord",
+       "shortName": "SWET"
+      },
+      {"name": "COLD",
+       "title": ":cold_face: emoji on discord",
+       "shortName": "COLD"
+      },
+      {"name": "THUM",
+       "title": ":thumbsup: emoji on discord",
+       "shortName": "THUM"
+      }
+  ],
+  "lighting": "none",
+  "matrix": {
+    "rows": 5,
+    "cols": 17
+  },
+  "layouts": {
+    "labels": [
+      "Split BS",
+      [
+          "Enter",
+          "Zenith",
+          "Ansi",
+          "Iso"
+      ],
+      "Split LShift",
+      "Full RShift",
+      [
+          "Bottom Row",
+          "5140-style",
+          "Tsangan",
+          "ANSI"
+      ]
+  ],
+    "keymap": [
+        [
+          {
+            "x": 17
+          },
+          "0,0\n\n\n\n\n\n\n\n\ne",
+          "0,1\n\n\n\n\n\n\n\n\ne"
+        ],
+        [
+          {
+            "y": 0.25
+          },
+          "0,0",
+          "0,1",
+          {
+            "x": 0.5,
+            "c": "#777777"
+          },
+          "0,2",
+          {
+            "c": "#cccccc"
+          },
+          "0,3",
+          "0,4",
+          "0,5",
+          "0,6",
+          "0,7",
+          "0,8",
+          "0,9",
+          "0,10",
+          "0,11",
+          "0,12",
+          "0,13",
+          "0,14",
+          {
+            "c": "#aaaaaa",
+            "w": 2
+          },
+          "4,13\n\n\n0,0",
+          {
+            "c": "#cccccc"
+          },
+          "0,16",
+          {
+            "x": 0.75
+          },
+          "0,15\n\n\n0,1",
+          {
+            "c": "#aaaaaa"
+          },
+          "4,13\n\n\n0,1"
+        ],
+        [
+          {
+            "c": "#cccccc"
+          },
+          "1,0",
+          "1,1",
+          {
+            "x": 0.5,
+            "c": "#aaaaaa",
+            "w": 1.5
+          },
+          "1,2",
+          {
+            "c": "#cccccc"
+          },
+          "1,3",
+          "1,4",
+          "1,5",
+          "1,6",
+          "1,7",
+          "1,8",
+          "1,9",
+          "1,10",
+          "1,11",
+          "1,12",
+          "1,13",
+          {
+            "c": "#aaaaaa",
+            "w": 1.5
+          },
+          "1,14\n\n\n1,0",
+          {
+            "c": "#777777",
+            "h": 2,
+            "w2": 2.25,
+            "h2": 1,
+            "x2": -1.25,
+            "y2": 1
+          },
+          "2,15\n\n\n1,0",
+          {
+            "c": "#cccccc"
+          },
+          "1,16",
+          {
+            "x": 0.5
+          },
+          "1,14\n\n\n1,1",
+          {
+            "c": "#aaaaaa",
+            "w": 1.5
+          },
+          "1,15\n\n\n1,1",
+          {
+            "x": 0.75,
+            "c": "#cccccc"
+          },
+          "1,14\n\n\n1,2",
+          {
+            "x": 0.25,
+            "c": "#777777",
+            "w": 1.25,
+            "h": 2,
+            "w2": 1.5,
+            "h2": 1,
+            "x2": -0.25
+          },
+          "2,15\n\n\n1,2"
+        ],
+        [
+          {
+            "c": "#cccccc"
+          },
+          "2,0",
+          "2,1",
+          {
+            "x": 0.5,
+            "c": "#aaaaaa",
+            "w": 1.75
+          },
+          "2,2",
+          {
+            "c": "#cccccc"
+          },
+          "2,3",
+          "2,4",
+          "2,5",
+          "2,6",
+          "2,7",
+          "2,8",
+          "2,9",
+          "2,10",
+          "2,11",
+          "2,12",
+          "2,13",
+          {
+            "x": 2.25
+          },
+          "2,16",
+          {
+            "x": 0.75,
+            "c": "#777777",
+            "w": 2.25
+          },
+          "2,15\n\n\n1,1",
+          {
+            "x": 1,
+            "c": "#cccccc"
+          },
+          "2,14\n\n\n1,2"
+        ],
+        [
+          "3,0",
+          "3,1",
+          {
+            "x": 0.5,
+            "c": "#aaaaaa",
+            "w": 2.25
+          },
+          "3,2\n\n\n2,0",
+          {
+            "c": "#cccccc"
+          },
+          "3,4",
+          "3,5",
+          "3,6",
+          "3,7",
+          "3,8",
+          "3,9",
+          "3,10",
+          "3,11",
+          "3,12",
+          "3,13",
+          {
+            "c": "#aaaaaa",
+            "w": 1.75
+          },
+          "3,14\n\n\n3,0",
+          {
+            "c": "#cccccc"
+          },
+          "3,15\n\n\n3,0",
+          "3,16"
+        ],
+        [
+          "4,0",
+          "4,1",
+          {
+            "x": 0.5,
+            "c": "#aaaaaa",
+            "w": 1.5
+          },
+          "4,2\n\n\n4,0",
+          {
+            "w": 1.5
+          },
+          "4,3\n\n\n4,0",
+          {
+            "w": 1.5
+          },
+          "4,4\n\n\n4,0",
+          {
+            "w": 5.5
+          },
+          "4,8\n\n\n4,0",
+          {
+            "w": 1.5
+          },
+          "4,11\n\n\n4,0",
+          "4,12\n\n\n4,0",
+          {
+            "x": 0.5,
+            "c": "#cccccc"
+          },
+          "4,14",
+          "4,15",
+          "4,16"
+        ],
+        [
+          {
+            "y": 0.5,
+            "x": 2.5,
+            "c": "#aaaaaa",
+            "w": 1.5
+          },
+          "4,2\n\n\n4,1",
+          "4,3\n\n\n4,1",
+          {
+            "w": 1.5
+          },
+          "4,4\n\n\n4,1",
+          {
+            "w": 7
+          },
+          "4,8\n\n\n4,1",
+          {
+            "w": 1.5
+          },
+          "4,12\n\n\n4,1"
+        ],
+        [
+          {
+            "x": 2.5,
+            "w": 1.25
+          },
+          "4,2\n\n\n4,2",
+          {
+            "w": 1.25
+          },
+          "4,3\n\n\n4,2",
+          {
+            "w": 1.25
+          },
+          "4,4\n\n\n4,2",
+          {
+            "w": 6.25
+          },
+          "4,8\n\n\n4,2",
+          {
+            "w": 1.25
+          },
+          "4,11\n\n\n4,2",
+          {
+            "w": 1.25
+          },
+          "4,12\n\n\n4,2"
+        ],
+        [
+          {
+            "y": 0.5,
+            "x": 2.5,
+            "w": 1.25
+          },
+          "3,2\n\n\n2,1",
+          "3,3\n\n\n2,1",
+          {
+            "x": 10,
+            "w": 2.75
+          },
+          "3,14\n\n\n3,1"
+        ]
+      ]
+
+  }
+}

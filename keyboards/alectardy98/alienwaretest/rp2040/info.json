@@ -1,0 +1,30 @@
+{
+    "keyboard_name": "Alienware AW768",
+    "manufacturer": "Alectardy98",
+    "url": "https://keebal.com",
+    "maintainer": "Alectardy98",
+    "usb": {
+        "vid": "0x7281",
+        "pid": "0x0092",
+        "device_version": "0.0.1"
+    },
+    "url": "https://github.com/alectardy98",
+    "maintainer": "Alectardy98",
+    "encoder": {
+        "rotary": [
+            { "pin_a": "GP28", "pin_b": "GP27" }
+        ]
+    }
+    "debounce": 5,
+    "diode_direction": "ROW2COL",
+    "matrix_pins": {
+        "cols": ["GP12", "GP10", "GP9", "GP8", "GP7", "GP6", "GP5", "GP4", "GP3", "GP2", "GP1", "GP0", "GP26", "GP22", "GP21", "GP14"]
+        "rows": ["GP11", "GP13", "GP16", "GP15", "GP17", "GP19", "GP20", "GP18"],
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+            ]
+        }
+    }
+}
